@@ -115,13 +115,6 @@ To run this project, you will need to add the following environment variables to
  - [Masai School](https://masaischool.com/)
   
 
-## Authors
-
--  [Arpit Sachan](https://github.com/sachanarpit/)
-
-- [Dharmesh Yadav](https://github.com/dharmeshrao)
-
-- [Rahul Kumar Yadav](https://github.com/rahulyadav96)
 
 
 ## Home Page
