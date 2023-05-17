@@ -12,6 +12,8 @@ import styled from "styled-components";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Login } from "../login/Login";
+import Hotels from "./Hotels";
+import logo from "../../images/logo.png"
 const Icondivcss = styled.div`
   .icondiv {
     height: 60px;
@@ -80,12 +82,17 @@ export const Header = () => {
     }
   };
   window.addEventListener("scroll", handleChange);
+  const handlehotels = () => {
+    return (
+      <Hotels />
+    )
+  }
   return (
     <Icondivcss>
       <div className={nav ? "icondiv" : "disnone"}>
         <div className="imgdiv">
           <Link to="/">
-            <img src={"https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png"} alt="Logo" />
+            <img src={logo} alt="Logo" />
           </Link>
         </div>
         <div className="icons">
@@ -93,9 +100,9 @@ export const Header = () => {
             <span>
               <FlightIcon style={{ fontSize: 30, padding: 4 }}></FlightIcon>
             </span>
-            <p>Flights</p>
+            <p>Flight</p>
           </div>
-          <div>
+          <div onClick={handlehotels}>
             <span>
               <HotelIcon style={{ fontSize: 30, padding: 4 }}></HotelIcon>
             </span>
@@ -163,7 +170,7 @@ export const Header = () => {
           </div>
         </div>
         <div className="login">
-        <Login handleClick={handlePopup}/>
+          <Login handleClick={handlePopup} />
         </div>
       </div>
     </Icondivcss>

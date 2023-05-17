@@ -11,6 +11,7 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Login } from "../login/Login";
+import logo from "../../images/logo.png"
 const Icondivcss = styled.div`
   .icondiv {
     height: 60px;
@@ -71,8 +72,8 @@ export const Header = () => {
     <Icondivcss>
       <div className="icondiv">
         <div className="imgdiv">
-        <Link to="/">
-            <img src={"https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png"} alt="Logo" />
+          <Link to="/">
+            <img src={logo} alt="Logo" />
           </Link>
         </div>
         <div className="icons">
@@ -150,7 +151,7 @@ export const Header = () => {
           </div>
         </div>
         <div className="login">
-        <Login handleClick={handlePopup}/>
+          <Login handleClick={handlePopup} />
         </div>
       </div>
     </Icondivcss>

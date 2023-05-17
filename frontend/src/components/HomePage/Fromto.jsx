@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Fromtocss } from "./Fromtocss";
 
-export const Fromto = ({handleChange}) => {
+export const Fromto = ({ handleChange }) => {
   const [text, setText] = useState([]);
   useEffect(() => {
     let promise = async () => {
@@ -49,7 +49,7 @@ export const Fromto = ({handleChange}) => {
         <div>
           <h3>TRAVLLER & CLASS</h3>
           <select name="" id="">
-          <option value="">Select</option>
+            <option value="">Select</option>
 
             <option value="">Economy</option>
             <option value="">Premium</option>
