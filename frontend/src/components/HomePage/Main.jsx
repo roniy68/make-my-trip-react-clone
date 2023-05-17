@@ -13,6 +13,9 @@ import { SmallBottom } from "./SmallBottom";
 import { useState } from "react";
 import { FareTypes } from "./FareTypes";
 import { Login } from "../login/Login";
+
+// Logo
+import logo from "../../images/logo.png"
 export const Main = () => {
   const [data, setData] = useState({
     from: "",
@@ -43,13 +46,13 @@ export const Main = () => {
             <img
               className="mmtlogo"
               src={
-                "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png"
+                logo
               }
               alt="Logo"
             />
           </Link>
           <div className="login">
-          <Login handleClick={handlePopup}/>
+            <Login handleClick={handlePopup} />
           </div>
           <Smallbutton>
             <div className="smallbuttonpic">
